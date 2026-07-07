@@ -1,8 +1,8 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"main": ".open-next/worker.js",
-	"name": "setrix-trends",
-	"compatibility_date": "2026-07-06",
+	"name": "setrixtrends",
+	"compatibility_date": "2026-07-07",
 	"compatibility_flags": [
 		"nodejs_compat",
 		"global_fetch_strictly_public"
@@ -16,7 +16,7 @@
 			// Self-reference service binding, the service name must match the worker name
 			// see https://opennext.js.org/cloudflare/caching
 			"binding": "WORKER_SELF_REFERENCE",
-			"service": "setrix-trends"
+			"service": "setrixtrends"
 		}
 	],
 	"r2_buckets": [
@@ -27,7 +27,7 @@
 			// Create the bucket before deploying
 			// You can change the bucket name if you want
 			// See https://developers.cloudflare.com/workers/wrangler/commands/#r2-bucket-create
-			"bucket_name": "setrix-trends-opennext-cache"
+			"bucket_name": "setrixtrends-opennext-cache"
 		}
 	],
 	"images": {
